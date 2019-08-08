@@ -9,7 +9,8 @@ Frequency=2742186 Hz, Resolution=364.6726 ns, Timer=TSC
 
 
 ```
-|                          Method |        Mean |       Error |     StdDev | Rank | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
-|-------------------------------- |------------:|------------:|-----------:|-----:|-----:|--------:|------:|------:|----------:|
-|    ComputationalWorkUsingThread | 2,526.26 us | 186.8245 us | 539.031 us |    2 |   ** | 27.3438 |     - |     - |     280 B |
-| DoArithematicOperationUsingTask |    44.17 us |   0.8613 us |   1.341 us |    1 |    * |  1.0376 |     - |     - |     144 B |
+|                       Method |        Mean |      Error |      StdDev | Rank | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
+|----------------------------- |------------:|-----------:|------------:|-----:|-----:|--------:|------:|------:|----------:|
+|      ComputationalWorkNormal |    53.72 us |  2.1056 us |   6.0075 us |    2 |   ** |       - |     - |     - |     240 B |
+| ComputationalWorkUsingThread | 1,596.78 us | 43.9370 us | 128.8595 us |    3 |  *** | 27.3438 |     - |     - |     280 B |
+|   ComputationalWorkUsingTask |    42.86 us |  0.8186 us |   0.7657 us |    1 |    * |  1.0376 |     - |     - |     144 B |

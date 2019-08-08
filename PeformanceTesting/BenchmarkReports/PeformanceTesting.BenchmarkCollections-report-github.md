@@ -11,7 +11,7 @@ Frequency=2742186 Hz, Resolution=364.6726 ns, Timer=TSC
 ```
 |                                          Method |      Mean |     Error |    StdDev |    Median | Rank | Rank |  Gen 0 |  Gen 1 | Gen 2 | Allocated |
 |------------------------------------------------ |----------:|----------:|----------:|----------:|-----:|-----:|-------:|-------:|------:|----------:|
-|              PerfromanceOfListCreateAndPopulate |  3.518 us | 0.1452 us | 0.4282 us |  3.447 us |    1 |    * | 4.0131 |      - |     - |   8.23 KB |
-|     PerfromanceOfConcurrentBagCreateAndPopulate | 42.613 us | 2.5451 us | 7.5043 us | 39.696 us |    2 |   ** | 1.3428 | 0.6714 |     - |   8.25 KB |
-| PerformanceTestForListCreateWithEnumerableRange |  3.607 us | 0.1683 us | 0.4773 us |  3.393 us |    1 |    * | 1.9569 |      - |     - |   4.01 KB |
-|         PerformanceTestForListCreateWithForLoop |  3.412 us | 0.1345 us | 0.3924 us |  3.296 us |    1 |    * | 4.0131 |      - |     - |   8.23 KB |
+|              PerfromanceOfListCreateAndPopulate |  3.197 us | 0.0636 us | 0.1677 us |  3.173 us |    1 |    * | 4.0131 |      - |     - |   8.23 KB |
+|     PerfromanceOfConcurrentBagCreateAndPopulate | 37.773 us | 1.4571 us | 4.2274 us | 36.476 us |    4 | **** | 1.3428 | 0.6714 |     - |   8.25 KB |
+| PerformanceTestForListCreateWithEnumerableRange |  3.341 us | 0.0659 us | 0.1238 us |  3.308 us |    2 |   ** | 1.9569 |      - |     - |   4.01 KB |
+|         PerformanceTestForListCreateWithForLoop |  3.577 us | 0.0713 us | 0.1722 us |  3.612 us |    3 |  *** | 4.0131 |      - |     - |   8.23 KB |

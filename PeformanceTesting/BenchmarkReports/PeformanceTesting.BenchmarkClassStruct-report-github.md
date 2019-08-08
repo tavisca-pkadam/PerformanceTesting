@@ -9,7 +9,7 @@ Frequency=2742186 Hz, Resolution=364.6726 ns, Timer=TSC
 
 
 ```
-|             Method |     Mean |     Error |   StdDev |   Median |
-|------------------- |---------:|----------:|---------:|---------:|
-| PerformanceOfClass | 15.98 us | 0.4958 us | 1.357 us | 15.74 us |
-| PerformaceOfStruct | 13.43 us | 1.0963 us | 3.233 us | 12.56 us |
+|             Method |     Mean |     Error |    StdDev |    Median | Rank | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
+|------------------- |---------:|----------:|----------:|----------:|-----:|-----:|--------:|------:|------:|----------:|
+| PerformanceOfClass | 14.80 us | 0.3664 us | 1.0154 us | 14.425 us |    2 |   ** | 23.1476 |     - |     - |  47.47 KB |
+| PerformaceOfStruct | 10.03 us | 0.2624 us | 0.7401 us |  9.912 us |    1 |    * | 15.6097 |     - |     - |  32.19 KB |

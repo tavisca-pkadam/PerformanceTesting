@@ -26,6 +26,7 @@ namespace PeformanceTesting
         }
 
 
+        [Benchmark]
         public void ComputationalWorkNormal()
         {
             ComputationalWork();
@@ -41,21 +42,21 @@ namespace PeformanceTesting
         public void ComputationalWorkUsingThread()
         {
             Thread computeThread = new Thread(x =>
-            {
-                new Thread(_ => { ComputationalWork(); }).Start();
-                new Thread(_ => { ComputationalWork(); }).Start();
-                new Thread(_ => { ComputationalWork(); }).Start();
-                new Thread(_ => { ComputationalWork(); }).Start();
-                new Thread(_ => { ComputationalWork(); }).Start();
-                new Thread(_ => { ComputationalWork(); }).Start();
-            }
-                );
+                {
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                    new Thread(_ => { ComputationalWork(); }).Start();
+                }
+            );
             computeThread.Start();
             computeThread.Join();
         }
 
         [Benchmark]
-        public void DoArithematicOperationUsingTask()
+        public void ComputationalWorkUsingTask()
         {
 
             Task.Run(async () =>

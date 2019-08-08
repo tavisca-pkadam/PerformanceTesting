@@ -9,7 +9,7 @@ Frequency=2742186 Hz, Resolution=364.6726 ns, Timer=TSC
 
 
 ```
-|                          Method |      Mean |      Error |      StdDev |    Median | Rank | Rank |     Gen 0 | Gen 1 | Gen 2 |  Allocated |
-|-------------------------------- |----------:|-----------:|------------:|----------:|-----:|-----:|----------:|------:|------:|-----------:|
-|        PerformanceTestForString | 652.73 us | 43.0015 us | 126.7908 us | 660.47 us |    2 |   ** | 1932.6172 |     - |     - | 3964.84 KB |
-| PerformanceTestForStringBuilder |  13.65 us |  0.3217 us |   0.9487 us |  13.92 us |    1 |    * |    4.1962 |     - |     - |    8.63 KB |
+|                          Method |       Mean |     Error |     StdDev | Rank | Rank |     Gen 0 | Gen 1 | Gen 2 |  Allocated |
+|-------------------------------- |-----------:|----------:|-----------:|-----:|-----:|----------:|------:|------:|-----------:|
+|        PerformanceTestForString | 464.057 us | 9.1722 us | 15.3247 us |    2 |   ** | 1932.6172 |     - |     - | 3964.84 KB |
+| PerformanceTestForStringBuilder |   7.699 us | 0.1102 us |  0.1031 us |    1 |    * |    4.2038 |     - |     - |    8.63 KB |

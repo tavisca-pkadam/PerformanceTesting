@@ -12,10 +12,7 @@ using BenchmarkDotNet.Order;
 
 namespace PeformanceTesting
 {
-    [RPlotExporter, RankColumn]
-    [MemoryDiagnoser]
-    [DisassemblyDiagnoser(printIL: true)]
-    [RankColumn(NumeralSystem.Stars)]
+    
     public class ClassUser
     {
         public string name;
@@ -40,6 +37,11 @@ namespace PeformanceTesting
             this.age = age;
         }
     }
+
+    [RPlotExporter, RankColumn]
+    [MemoryDiagnoser]
+    [DisassemblyDiagnoser(printIL: true)]
+    [RankColumn(NumeralSystem.Stars)]
     public class BenchmarkClassStruct
     {
         string name;
