@@ -1,4 +1,4 @@
-"# PerformanceTesting" 
+# PerformanceTesting
 
 [String and String Builder](./PeformanceTesting/BenchmarkReports/PeformanceTesting.BenchmarkStringAndStringBuilder-report-github.md)
 
